@@ -1,0 +1,63 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c1b4ae426554057eff949e14dba2f2ad3e17480573eaea3c547f646c569a8715
+
+name:           d05
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/d05#readme>
+homepage:       https://github.com/githubuser/d05#readme
+bug-reports:    https://github.com/githubuser/d05/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/d05
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_d05
+  hs-source-dirs:
+      src
+  ghc-options: -XMultiWayIf
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable d05-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_d05
+  hs-source-dirs:
+      app
+  ghc-options: -XMultiWayIf -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , d05
+  default-language: Haskell2010
+
+test-suite d05-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_d05
+  hs-source-dirs:
+      test
+  ghc-options: -XMultiWayIf -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , d05
+  default-language: Haskell2010
