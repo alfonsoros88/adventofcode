@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "d15:lib"
+
+    - path: "./app/Main.hs"
+      component: "d15:exe:d15-exe"
+
+    - path: "./app/Paths_d15.hs"
+      component: "d15:exe:d15-exe"
+
+    - path: "./test"
+      component: "d15:test:d15-test"
