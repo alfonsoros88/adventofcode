@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "d20:lib"
+
+    - path: "./app/Main.hs"
+      component: "d20:exe:d20-exe"
+
+    - path: "./app/Paths_d20.hs"
+      component: "d20:exe:d20-exe"
+
+    - path: "./test"
+      component: "d20:test:d20-test"
