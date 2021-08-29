@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "d21:lib"
+
+    - path: "./app/Main.hs"
+      component: "d21:exe:d21-exe"
+
+    - path: "./app/Paths_d21.hs"
+      component: "d21:exe:d21-exe"
+
+    - path: "./test"
+      component: "d21:test:d21-test"
