@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "d23:lib"
+
+    - path: "./app/Main.hs"
+      component: "d23:exe:d23-exe"
+
+    - path: "./app/Paths_d23.hs"
+      component: "d23:exe:d23-exe"
+
+    - path: "./test"
+      component: "d23:test:d23-test"
