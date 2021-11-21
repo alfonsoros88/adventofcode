@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d792e7f0396d957a3bab72d7f26982760a4af65a9b76be4bc5834430a28fcbf0
+-- hash: f68785b687f6de7b5ebcefa2387cf1e9e6f3b17c7fd484ff8c5b63680f29f7a0
 
 name:           d20
 version:        0.1.0.0
@@ -32,7 +32,8 @@ library
       Paths_d20
   hs-source-dirs:
       src
-  default-extensions: NamedFieldPuns
+  default-extensions:
+      NamedFieldPuns
   build-depends:
       base >=4.7 && <5
     , containers
@@ -46,7 +47,8 @@ executable d20-exe
       Paths_d20
   hs-source-dirs:
       app
-  default-extensions: NamedFieldPuns
+  default-extensions:
+      NamedFieldPuns
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
@@ -63,7 +65,8 @@ test-suite d20-test
       Paths_d20
   hs-source-dirs:
       test
-  default-extensions: NamedFieldPuns
+  default-extensions:
+      NamedFieldPuns
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
