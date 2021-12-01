@@ -8,8 +8,8 @@ library:
 
 executables:
   d01-exe:
-    main:                Main.hs
-    source-dirs:         src
+    main: Main.hs
+    source-dirs: src
     ghc-options:
     - -threaded
     - -rtsopts
