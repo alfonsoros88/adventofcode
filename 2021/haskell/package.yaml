@@ -50,3 +50,11 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+
+  d05:
+    main:                d05.hs
+    source-dirs:         d05
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
