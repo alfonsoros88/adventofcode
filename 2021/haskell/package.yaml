@@ -82,3 +82,11 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+
+  d09:
+    main:                d09.hs
+    source-dirs:         d09
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
