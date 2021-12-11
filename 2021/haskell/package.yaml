@@ -98,3 +98,11 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+
+  d11:
+    main:                d11.hs
+    source-dirs:         d11
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
