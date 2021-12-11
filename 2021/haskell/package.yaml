@@ -90,3 +90,11 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+
+  d10:
+    main:                d10.hs
+    source-dirs:         d10
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
