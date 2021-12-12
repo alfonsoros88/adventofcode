@@ -1,6 +1,8 @@
 module Main where
 import Data.List.Split (splitOn)
 import Control.Monad (guard)
+import Data.Vector (Vector)
+import qualified Data.Vector as V
 
 type Fish = [Int]
 
@@ -20,10 +22,22 @@ nthDay n fish = nthDay (n - 1) (nextDay fish)
 
 part1 = length . nthDay 80 . parseFishList
 
-part2 = length . nthDay 256 . parseFishList
+memo :: Int -> Int -> Int
+memo x = (map (notFib x) [0..] !!)
+    where
+        notFib :: Int -> Int -> Int
+        notFib _ 0 = 1
+        notFib x n
+            | x > 0 = memo (x - 1) (n - 1)
+            | otherwise = memo 6 (n - 1) + memo 8 (n - 1)
+
+nthDay' :: Int -> Fish -> Int
+nthDay' n = sum . map (`memo` n)
+
+part2 = nthDay' 256 . parseFishList
 
 main :: IO ()
 main = do
   input <- readFile "inputs/d06.txt"
   print $ part1 input
-  -- print $ part2 input
+  print $ part2 input
