@@ -17,6 +17,7 @@ dependencies:
 - split
 - vector
 - unordered-containers
+- bifunctors
 
 executables:
   d01:
@@ -110,6 +111,14 @@ executables:
   d12:
     main:                d12.hs
     source-dirs:         d12
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+
+  d13:
+    main:                d13.hs
+    source-dirs:         d13
     ghc-options:
     - -threaded
     - -rtsopts

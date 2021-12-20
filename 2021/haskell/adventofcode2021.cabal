@@ -25,6 +25,7 @@ executable d01
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -39,6 +40,7 @@ executable d02
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -53,6 +55,7 @@ executable d03
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -67,6 +70,7 @@ executable d04
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -81,6 +85,7 @@ executable d05
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -95,6 +100,7 @@ executable d06
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -109,6 +115,7 @@ executable d07
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -123,6 +130,7 @@ executable d08
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -137,6 +145,7 @@ executable d09
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -151,6 +160,7 @@ executable d10
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -165,6 +175,7 @@ executable d11
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
@@ -179,6 +190,22 @@ executable d12
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bifunctors
+    , split
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable d13
+  main-is: d13.hs
+  other-modules:
+      Paths_adventofcode2021
+  hs-source-dirs:
+      d13
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bifunctors
     , split
     , unordered-containers
     , vector
