@@ -18,6 +18,7 @@ dependencies:
 - vector
 - unordered-containers
 - bifunctors
+- memoize
 
 executables:
   d01:
@@ -119,6 +120,14 @@ executables:
   d13:
     main:                d13.hs
     source-dirs:         d13
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+
+  d14:
+    main:                d14.hs
+    source-dirs:         d14
     ghc-options:
     - -threaded
     - -rtsopts

@@ -26,6 +26,7 @@ executable d01
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -41,6 +42,7 @@ executable d02
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -56,6 +58,7 @@ executable d03
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -71,6 +74,7 @@ executable d04
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -86,6 +90,7 @@ executable d05
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -101,6 +106,7 @@ executable d06
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -116,6 +122,7 @@ executable d07
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -131,6 +138,7 @@ executable d08
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -146,6 +154,7 @@ executable d09
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -161,6 +170,7 @@ executable d10
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -176,6 +186,7 @@ executable d11
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -191,6 +202,7 @@ executable d12
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
@@ -206,6 +218,23 @@ executable d13
   build-depends:
       base >=4.7 && <5
     , bifunctors
+    , memoize
+    , split
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable d14
+  main-is: d14.hs
+  other-modules:
+      Paths_adventofcode2021
+  hs-source-dirs:
+      d14
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , bifunctors
+    , memoize
     , split
     , unordered-containers
     , vector
