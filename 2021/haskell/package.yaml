@@ -141,3 +141,11 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+
+  d16:
+    main:                d16.hs
+    source-dirs:         d16
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
