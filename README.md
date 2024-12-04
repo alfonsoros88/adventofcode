@@ -1,4 +1,3 @@
-# Advent of Code 2020
+# Advent of Code
 
-Repo for sharing solutions for the [Advent of Code
-2020](https://adventofcode.com/).
+my solutions to [Advent of Code](https://adventofcode.com/).
